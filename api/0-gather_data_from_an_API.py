@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """Gathering the needed informations from the API."""
 import json
-import requests 
+import requests
 from sys import argv
 
 if __name__ == '__main__':
@@ -13,7 +13,7 @@ if __name__ == '__main__':
     for i in resp_todos.json():
         if i['userId'] == int(argv[1]):
             todos_count = todos_count + 1
-            if i['completed'] == True:
+            if i['completed'] is True:
                 todos_done = todos_done + 1
     for i in resp_users.json():
         if i['id'] == int(argv[1]):
@@ -23,5 +23,5 @@ if __name__ == '__main__':
 
     for i in resp_todos.json():
         if i['userId'] == int(argv[1]):
-            if i['completed'] == True:
+            if i['completed'] is True:
                 print(f"\t {i['title']}")
