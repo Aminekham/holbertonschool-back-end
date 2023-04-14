@@ -15,6 +15,7 @@ if __name__ == '__main__':
             emp = i['username']
     for i in resp_todos.json():
         if i['userId'] == int(argv[1]):
+            small_dic = {}
             small_dic["task"] = i['title']
             small_dic["completed"] = i['completed']
             small_dic["username"] = emp
