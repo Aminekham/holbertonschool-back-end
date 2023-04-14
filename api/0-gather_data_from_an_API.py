@@ -23,4 +23,5 @@ if __name__ == '__main__':
 
     for i in resp_todos.json():
         if i['userId'] == int(argv[1]):
-            print(f"\t {i['title']}")
+            if i['completed'] == True:
+                print(f"\t {i['title']}")
