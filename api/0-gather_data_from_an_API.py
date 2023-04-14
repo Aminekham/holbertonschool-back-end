@@ -19,7 +19,7 @@ if __name__ == '__main__':
         if i['id'] == int(argv[1]):
             emp = i['name']
 
-    print(f"Employee {emp} is done with tasks({todos_done}/{todos_count})")
+    print(f"Employee {emp} is done with tasks({todos_done}/{todos_count}):")
 
     for i in resp_todos.json():
         if i['userId'] == int(argv[1]):
