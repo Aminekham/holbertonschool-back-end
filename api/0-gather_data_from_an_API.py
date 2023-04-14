@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Gathering the needed informations from the API"""
+"""Gathering the needed informations from the API."""
 import requests 
 import json
 from sys import argv
