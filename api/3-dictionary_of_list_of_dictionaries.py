@@ -18,5 +18,5 @@ if __name__ == '__main__':
             small_dic["username"] = i['username']
             json_list.append(small_dic)
         json_dic[i['id']] = json_list
-    with open("todo_all_employees.json", 'w') as f:
-        json.dump(json_dic, f)
+        with open("todo_all_employees.json", 'w') as f:
+            json.dump(json_dic, f)
